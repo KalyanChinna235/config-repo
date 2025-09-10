@@ -3,8 +3,7 @@ spring:
   name: customer-service
 datasource:
   url: jdbc:mySql://localhost:3306/ecommerce
-  username: root
-  password: root
+  driverClassName: com.mysql.cj.jdbc.Driver
 spring:
  jpa: 
   hibernate:
