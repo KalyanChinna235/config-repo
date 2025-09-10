@@ -1,14 +1,18 @@
 global:
- message: Welcome to order service prod environment!!
+  message: Welcome to order service prod environment!!
+
 server: 
- port: 8085
+  port: 8085
+
 message: Hello from order prod!
-datasource:
-  url: jdbc:mySql://localhost:3306/order_dev
-  username: root
-  password: root
+
 spring:
- jpa: 
-  hibernate:
-   ddl-auto: update
-      show-sql: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/order_dev
+    username: root
+    password: root
+
+  jpa: 
+    hibernate:
+      ddl-auto: update
+    show-sql: false
