@@ -1,11 +1,14 @@
 spring:
- application:
-  name: order-service
-datasource:
-  url: jdbc:mySql://localhost:3306/order-master
-  driverClassName: com.mysql.cj.jdbc.Driver
-spring:
- jpa: 
-  hibernate:
-   ddl-auto: update
-      show-sql: false
+  application:
+    name: order-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/order-master
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
