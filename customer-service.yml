@@ -1,0 +1,12 @@
+spring:
+ application:
+  name: customer-service
+datasource:
+  url: jdbc:mySql://localhost:3306/ecommerce
+  username: root
+  password: root
+spring:
+ jpa: 
+  hibernate:
+   ddl-auto: update
+      show-sql: false
