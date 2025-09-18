@@ -11,7 +11,9 @@ spring:
     url: jdbc:mysql://localhost:3306/customer_prod
     username: root
     password: test
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa: 
     hibernate:
       ddl-auto: update
     show-sql: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
